@@ -8,9 +8,9 @@ from subprocess import Popen, PIPE
 def sendmail():
     message = "Google Page Test Says your Score is " + str(score)
     msg = MIMEText(message)
-    msg["From"] = "me@moglix.com"
-    msg["To"] = "nitigya.sharma@gmail.com"
-    msg["Subject"] = "This is the subject."
+    msg["From"] = "score@gscore.lo"
+    msg["To"] = "nitigyasharma@hotmail.com"
+    msg["Subject"] = "Score of Website."
     p = Popen(["/usr/sbin/sendmail", "-t", "-oi"], stdin=PIPE)
     p.communicate(msg.as_string())
 
