@@ -15,7 +15,7 @@ def sendmail():
     p.communicate(msg.as_string())
 
 #Fetch Data from the URL
-r = requests.get("https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=http%3A%2F%2Fwww.moglix.com")
+r = requests.get("https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=http%3A%2F%2Fwww.commcarehq.org")
 text=""
 if r.status_code == 200:
    text=json.loads(r.text)
